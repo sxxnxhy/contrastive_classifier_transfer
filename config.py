@@ -40,7 +40,6 @@ VAL_SPLIT = 0.2
 BATCH_SIZE = 512  # Effective batch size from sampler (4 classes × 64 samples × 2 modalities)
 EPOCHS = 2000
 LR = 1e-5
-WEIGHT_DECAY = 1e-4  # Increased from 1e-5 for stronger regularization
 
 # Model Architecture
 EMBEDDING_DIM = 512  # Larger embedding dimension
@@ -69,3 +68,10 @@ USE_LAZY_LOADING = True  # MUST be True for 200k files
 USE_PARALLEL = True  # Use parallel preprocessing for faster loading
 MAX_WORKERS = 16  # For preprocessing
 NUM_WORKERS = 16  # DataLoader workers - reduced to save memory 
+
+
+
+
+#test_classifier
+NUM_SAMPLES = 20
+SEED = 42
