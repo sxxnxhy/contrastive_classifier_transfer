@@ -215,14 +215,7 @@ class CrossModalContrastiveModel(nn.Module):
         
         # 3. [NEW] Peak Apex Feature Extractor
         self.peak_feature_extractor = PeakApexFeatureExtractor()
-        # --- [END MODIFIED] ---
         
-        
-        # --- [REFACTORED] ---
-        # All temperature logic (logit_scale, min/max) has been MOVED
-        # to the SupervisedContrastiveLoss class in train.py
-        # --- [END REFACTORED] ---
-
     
     def encode_raman(self, spectra: torch.Tensor) -> torch.Tensor:
         """Encode Raman spectra to embeddings"""

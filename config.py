@@ -73,5 +73,5 @@ NUM_WORKERS = 16  # DataLoader workers - reduced to save memory
 
 
 #test_classifier
-NUM_SAMPLES = 20
+NUM_SAMPLES = 200
 SEED = 42
